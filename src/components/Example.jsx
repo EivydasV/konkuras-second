@@ -4,6 +4,7 @@ import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
+import Book from "./Book";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -24,7 +25,6 @@ const sidebar = {
     },
   },
 };
-const sideBar = React.createContext(null);
 
 export const Example = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -32,17 +32,19 @@ export const Example = () => {
   const { height } = useDimensions(containerRef);
 
   return (
-    <motion.nav
-      initial={false}
-      animate={isOpen ? "open" : "closed"}
-      custom={height}
-      ref={containerRef}
-      style={{ zIndex: 500 }}
-    >
-      <motion.div className="background" variants={sidebar} />
-      <Navigation open={isOpen} />
-      <MenuToggle toggle={() => toggleOpen()} />
-    </motion.nav>
+    <>
+      <motion.nav
+        initial={false}
+        animate={isOpen ? "open" : "closed"}
+        custom={height}
+        ref={containerRef}
+        style={{ zIndex: 500 }}
+      >
+        <motion.div className="background" variants={sidebar} />
+        <Navigation open={isOpen} />
+        <MenuToggle toggle={() => toggleOpen()} />
+      </motion.nav>
+    </>
   );
 };
 export default Example;

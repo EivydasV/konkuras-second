@@ -27,7 +27,7 @@ export default function Header() {
   const classes = useStyles();
 
   return (
-    <AppBar position="fixed" color="transparent">
+    <AppBar position="fixed" color="transparent" elevation={0}>
       <Toolbar>
         <a
           href="http://kitm.lt/"
@@ -37,8 +37,6 @@ export default function Header() {
         >
           <img src="/kitm.jpg" alt="logo" className={classes.logo} />
         </a>
-
-        <Typography variant="h6">1/10</Typography>
       </Toolbar>
     </AppBar>
   );
