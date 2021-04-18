@@ -16,7 +16,7 @@ import baigtas12 from "../images/Baigtas12.png";
 import baigtas13 from "../images/Baigtas13.png";
 import baigtas14 from "../images/Baigtas14.png";
 
-import { motion, usePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import Container from "@material-ui/core/Container";
 import { isBrowser } from "react-device-detect";
