@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HTMLFlipBook from "react-pageflip";
-import Grid from "@material-ui/core/Grid";
+
 import baigtas from "../images/Baigtas.png";
 import baigtas2 from "../images/Baigtas2.png";
 import baigtas3 from "../images/Baigtas3.png";
@@ -15,18 +15,11 @@ import baigtas11 from "../images/Baigtas11.png";
 import baigtas12 from "../images/Baigtas12.png";
 import baigtas13 from "../images/Baigtas13.png";
 import baigtas14 from "../images/Baigtas14.png";
-import Tilt from "react-tilt";
+
 import { motion } from "framer-motion";
-import IconButton from "@material-ui/core/IconButton";
-import DeleteIcon from "@material-ui/icons/Delete";
-import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
+
 import Container from "@material-ui/core/Container";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
+import { isBrowser } from "react-device-detect";
 
 export default function Book() {
   const [page, setPage] = useState(0);
