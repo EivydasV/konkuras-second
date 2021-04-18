@@ -29,7 +29,12 @@ export default function Book({ open }) {
       <Container maxWidth="xl">
         <motion.div
           animate={{
-            x: isBrowser && page === 0 ? -300 : page === 13 ? 300 : 0,
+            x:
+              isBrowser && page === 0
+                ? -300
+                : isBrowser && page === 13
+                ? 300
+                : 0,
           }}
           transition={{ type: "tween", ease: "easeOut" }}
           className="book"
