@@ -1,0 +1,134 @@
+$primary: #393e46;
+$secondary: #00adb5;
+$background: #222831;
+$text-color: #eeeeee;
+
+body {
+  background: $background !important;
+  height: 100vh;
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  color: $text-color;
+}
+#header {
+  width: 100%;
+  padding: 10px 40px;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  max-width: 200px;
+}
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  background: $secondary;
+}
+
+button {
+  outline: none;
+  border: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  right: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+}
+
+ul {
+  position: absolute;
+  top: 70px;
+  width: 230px;
+}
+
+li {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+}
+
+.refresh {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $text-color;
+}
+.book {
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+@media only screen and (max-width: 500px) {
+  .background {
+    width: 100%;
+  }
+  ul {
+    width: 100%;
+  }
+  nav {
+    width: 100vw;
+  }
+}

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { CssBaseline } from "@material-ui/core";
+import Header from "./components/Header";
+import Example from "./components/Example";
+import Book from "./components/Book";
+import IconButton from "@material-ui/core/IconButton";
+import DeleteIcon from "@material-ui/icons/Delete";
+import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <div className="App">
+        <Header />
+        <Example />
+        <Book />
+        {/* <IconButton aria-label="delete">
+          <ArrowDownwardIcon fontSize="secondary" />
+        </IconButton> */}
+      </div>
+    </>
   );
 }
 
