@@ -1,24 +1,12 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Hamburger from "hamburger-react";
-import IconButton from "@material-ui/core/IconButton";
-import Example from "./Example";
-import Grid from "@material-ui/core/Grid";
+
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
   logo: {
+    marginTop: 5,
     maxWidth: 160,
     marginRight: "auto",
   },

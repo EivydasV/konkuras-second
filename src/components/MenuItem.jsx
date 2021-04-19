@@ -1,14 +1,13 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import SchoolOutlinedIcon from "@material-ui/icons/SchoolOutlined";
+
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
-import InboxIcon from "@material-ui/icons/Inbox";
-import DraftsIcon from "@material-ui/icons/Drafts";
+
 import Tooltip from "@material-ui/core/Tooltip";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import SchoolIcon from "@material-ui/icons/School";

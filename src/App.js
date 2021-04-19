@@ -4,15 +4,13 @@ import Header from "./components/Header";
 import Example from "./components/Example";
 import Book from "./components/Book";
 
-import { isBrowser } from "react-device-detect";
-
 function App() {
   return (
     <>
       <CssBaseline />
       <div className="App">
         <Header />
-        {isBrowser && <Example />}
+        <Example />
         <Book />
       </div>
     </>

@@ -16,6 +16,7 @@ const sidebar = {
   }),
   closed: {
     clipPath: "circle(30px at 350px 1500px)",
+    overflow: "hidden",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -37,7 +38,7 @@ export const Example = () => {
         animate={isOpen ? "open" : "closed"}
         custom={height}
         ref={containerRef}
-        style={{ zIndex: 500 }}
+        style={{ zIndex: isOpen ? 500 : 300 }}
       >
         <motion.div className="background" variants={sidebar} />
         <Navigation open={isOpen} />
